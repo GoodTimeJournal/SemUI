@@ -1,0 +1,12 @@
+# Ignore Extra_files
+/Extra_files
+Extra_files/
+
+# Ignore powerpoint files
+*.powerpoint
+
+# Ignore word files
+*.doc
+
+#Ignore pdf files
+*.pdf
