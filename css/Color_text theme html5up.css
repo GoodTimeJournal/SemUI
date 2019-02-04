@@ -1,0 +1,26 @@
+    body {
+        background-color: #e37b7c;
+        background-image: url(../../images/overlay.png), 
+    linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, 
+    rgba(227, 123, 124, 0.25) 50%, 
+    rgba(255, 228, 180, 0.25));
+    font: inherit;
+
+    } 
+   
+
+    h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font: inherit;
+}
+
+button {
+    color: #e37b7c;
+    background-color: white;
+}
