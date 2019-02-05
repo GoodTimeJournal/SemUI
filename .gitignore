@@ -10,3 +10,5 @@ Extra_files/
 
 #Ignore pdf files
 *.pdf
+
+// less-watch-compiler less css indexDYL.less

@@ -1,6 +1,16 @@
+@import './variablesDYL';
+@import './mixinsDYL';
+@import './TopBarDYL';
+@import './TopInfoDYL';
+@import './carousel';
+@import './tabsDYL';
+@import './cardsDYL';
 
 * {
     box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
 }
 
 html, body {
@@ -9,7 +19,48 @@ html, body {
 }
 
 body {
-    .flex(none, center, column);
+    
+    .flex(space-between, center, column);
     background-color: @primary-background-color;
+    color: @primary-color;
     font-family: @big-letter-font;
+    
 }
+
+h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+    padding-bottom: 10px;
+  }
+  
+  h4 {
+    font-size: 2.5rem;    
+  }
+  h5 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  
+  p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+  }
+
+  .start-button {
+    margin-top: 40px;
+    .flex(center, center, column);
+      button {
+        font-weight: bold;
+        .button-creator(400px, 50px, @primary-color, @primary-background-color, 2rem);
+      }
+      @media(max-width: 500px){
+        width: 100%;
+        .flex(center, center, column);
+        flex-wrap: wrap;
+      }
+   
+  }

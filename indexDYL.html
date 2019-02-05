@@ -5,14 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'> 
+  
   <title>Design Your Life</title>
 
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/indexDYL.css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-    <!-- <script src="./components/Tabs/Tabs.js" async></script> -->
+    <script src="./Components/carouselDYL.js" async></script>
+    <script src="./Components/tabsDYL.js" async></script>
+    
+    
+    <!-- <script src="./components/Tabs/Tabs.js" async></script>
 
 
   <!--[if lt IE 9]>
@@ -23,15 +27,16 @@
 <body>
 
     <!-- TOP BAR COMPONENT -->
+
     <header class="top-bar">
         <div class="container">
         <div class="container-left">
-           <img src="./img/LogoDYL.jpg" alt="Design your life logo">
+           <img src="./img/LogoII_DYL.png" alt="Design your life logo">
         </div>
         <div class="container-center">
             <span>About</span> <span>Features</span> <span>Blog</span> <span>Contact</span>            
         </div>
-        <div class="container-right"> <span>New User? Sign up</span> <span>LOG In</span>  
+        <div class="container-right"> <span>SIGN UP</span> <span>LOG IN</span>  
         </div>
     </div>
     </header>
@@ -39,28 +44,40 @@
     <!-- Top info COMPONENT -->
     <div class="top-info">
         <h1>Let’s help you design your best life</h1>
-        <h5>Your private, secure & optimally designed life</h5>
-        <h5>We guide you through it all</h5> 
+        <h5>Your private, secure & optimally designed life <br> We guide you through it all</h5>
+        
     </div>
 
     <!-- Carousel -->
     <div class="carousel">
-        <div class="left-button"> < </div>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <div class="right-button"> > </div>
-    </div>
+        <!-- <div class="left-button">&#10094;</div> -->        
+            <div class="numbertext">Phase I: Self Acceptance        
+                <img src="./img/lost.jpg" alt="woman looking up in forest" class="carousel-img">
+            </div>
+        
+            <div class="numbertext">Phase II: Design Your Life
+                <img src="./img/write_life.jpg" alt="empty book with pen" class="carousel-img">
+            </div>        
+
+        
+            <div class="numbertext">Phase III: Sample Your Life
+                <img src="./img/sampling_life.jpg" alt="listening to someone talk" class="carousel-img">
+            </div>
+        
+            <div class="right-button">&#10095;</div>       
+    </div>    
+    
 
     <!-- Start button -->
     <div class="start-button">
-        <button>Start designing a better life for you</button>
+        <button>Start designing a better life for you</button> 
+        <h2>How It Works</h2>
     </div>
 
     <!-- Tabs component -->
     <div class="tabs">
         <div class="phases">
-            <div data-tab="phaseI" class="tab">Phase 1: Accept Imperfection</div>
+            <div data-tab="phaseI" class="tab active-tab">Phase 1: Accept Imperfection</div>
             <div data-tab="phaseII" class="tab">Phase 2: Design Your Life</div>
             <div data-tab="phaseIII" class="tab">Phase 3: Sample Your Lives</div>
         </div>
@@ -72,10 +89,63 @@
         <!-- CARD COMPONENTS -->
         <div class="card stepI" data-tab="phaseI">
             <div class="card-content">
-                <h2>Step 1:</h2>
+                <h5>Step 1:</h5>
                 <p>Ditch the notion that you have to be perfect!</p>
-            </div>
-            
+            </div>           
+        </div>
+
+        <div class="card stepII" data-tab="phaseI">
+            <div class="card-content">
+                <h5>Step 2:</h5>
+                <p>Ditch dysfunctional beliefs that you must have a passion!</p>
+            </div>           
+        </div>
+
+        <div class="card stepI" data-tab="phaseII">
+            <div class="card-content">
+                <h5>Step 1: Your optimized life</h5>
+                <p>Start a good time journal</p>
+                <p>Do it for 3 weeks everyday</p>
+                <p>Utilize AEIOU Technique: <ul>
+                    <li> <b>ACTIVITIES</b> you were doing?</li> 
+                    <li><b>ENVIRONMENT</b> you were in?</li>
+                    <li>Who were you <b>INTERACTING</b> with?</li>
+                    <li>What <b>OBJECTS</b> were you using?</li>
+                    <li>What <b>USERS</b> were you working for?</li>                    
+                </ul>                    
+                    </p>                   
+            </div>           
+        </div>
+
+        <div class="card stepII" data-tab="phaseII">
+                <div class="card-content">
+                    <h5>Step 2: Sketch a 5 year plan of your alternate life</h5>
+                    <p>Suppose your job went away due to AI taking over</p>
+                    <p>What else would you do?</p>                  
+                </div>           
+        </div>
+        <div class="card stepIII" data-tab="phaseII">
+                <div class="card-content">
+                    <h5>Step 3:Sketch a 5 year plan of your Fascinated life</h5>
+                    <p>What would you do if money, image, prestige wasn’t an issue for you?</p>                           
+                </div>           
+        </div>
+
+        <div class="card stepI" data-tab="phaseIII">
+                <div class="card-content">
+                    <h5>Step 1: Conduct prototype conversations</h5>
+                    <p>Reach out to people on linkedIn </p>  
+                    <p>Find people at conferences and ask to have coffee or 15 min skype meeting to conduct informational interviews. </p>
+                    <p>Listen to their stories and take notes.</p>                         
+                </div>           
+        </div>
+
+        <div class="card stepII" data-tab="phaseIII">
+                <div class="card-content">
+                    <h5>Step 2: Narrow down a few lives you'd like to live</h5>
+                    <p>Choose a life of one person you've interviewed</p>  
+                    <p>Live the life of that person for a while</p>                                           
+                </div>           
         </div>
 
     </div>
