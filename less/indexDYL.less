@@ -55,9 +55,18 @@ h1 {
   .start-button {
     margin-top: 40px;
     .flex(center, center, column);
-      button {
-        font-weight: bold;
-        .button-creator(400px, 50px, @primary-color, @primary-background-color, 2rem);
+      button {  
+        .button-creator(400px, 50px, @primary-color, @primary-background-color, 2rem);       
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: @primary-background-color;
+          background-color: @primary-color;
+          &:hover {
+            color: black;
+          }        
+        }
+        
       }
       @media(max-width: 500px){
         width: 100%;

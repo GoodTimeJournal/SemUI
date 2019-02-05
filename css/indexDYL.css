@@ -68,6 +68,9 @@
   align-items: center;
   flex-direction: row;
 }
+.container-right span {
+  margin: 15px;
+}
 .container-right span a {
   text-decoration: none;
   -webkit-border-radius: 15px;
@@ -174,7 +177,8 @@
   padding: 15px;
   position: absolute;
   top: 0;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: bold;
 }
 .carousel img {
   display: flex;
@@ -464,7 +468,6 @@ p {
   flex-direction: column;
 }
 .start-button button {
-  font-weight: bold;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -486,6 +489,15 @@ p {
 }
 .start-button button:hover {
   background: #f1f5f9;
+  color: black;
+}
+.start-button button a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1e9df7;
+  background-color: #f1f5f9;
+}
+.start-button button a:hover {
   color: black;
 }
 @media (max-width: 500px) {
