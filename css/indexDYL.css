@@ -30,7 +30,6 @@
   justify-content: flex-start;
   align-items: none;
   flex-direction: row;
-  border: 1px solid black;
   width: 400px;
   padding-left: 50px;
   margin: 5%;
@@ -69,7 +68,8 @@
   align-items: center;
   flex-direction: row;
 }
-.container-right span {
+.container-right span a {
+  text-decoration: none;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   display: flex;
@@ -77,8 +77,8 @@
   align-items: center;
   width: 130px;
   height: 50px;
-  background-color: #fff;
-  color: #e37b7c;
+  background-color: #f1f5f9;
+  color: #1e9df7;
   font-size: 1.8rem;
   padding: 20px;
   margin: 10px;
@@ -89,15 +89,15 @@
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .container-right span {
+  .container-right span a {
     width: 100%;
   }
 }
-.container-right span:hover {
-  background: #fff;
+.container-right span a:hover {
+  background: #f1f5f9;
   color: black;
 }
-.container-right span:hover {
+.container-right span a:hover {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -106,20 +106,31 @@
   align-items: center;
   width: 150px;
   height: 50px;
-  background-color: #fff;
-  color: #e37b7c;
+  background-color: #f1f5f9;
+  color: #1e9df7;
   font-size: 2.2rem;
   border: 2px solid #C0C0C0;
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .container-right span:hover {
+  .container-right span a:hover {
     width: 100%;
   }
 }
-.container-right span:hover:hover {
-  background: #fff;
+.container-right span a:hover:hover {
+  background: #f1f5f9;
   color: black;
+}
+@media (max-width: 500px) {
+  .container-right span a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
 }
 .top-info {
   display: flex;
@@ -128,11 +139,9 @@
   flex-direction: column;
 }
 .top-info h1 {
-  border: 1px solid black;
   text-align: center;
 }
 .top-info h5 {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,7 +149,6 @@
   text-align: center;
 }
 .carousel {
-  border: 1px solid black;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -181,11 +189,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  color: #e37b7c;
-  background-color: #fff;
+  color: #1e9df7;
+  background-color: #f1f5f9;
   border: 2px solid #C0C0C0;
-  color: #fff;
-  background-color: #e37b7c;
+  color: #f1f5f9;
+  background-color: #1e9df7;
   font-size: 1.8rem;
   border-radius: 50%;
   position: absolute;
@@ -194,8 +202,8 @@
   cursor: pointer;
 }
 .carousel .right-button:hover {
-  color: #e37b7c;
-  background-color: #fff;
+  color: #1e9df7;
+  background-color: #f1f5f9;
 }
 .carousel .right-button {
   top: 50%;
@@ -207,7 +215,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: #fff;
+  background-color: #f1f5f9;
 }
 .tabs .phases {
   display: flex;
@@ -230,15 +238,15 @@
   justify-content: none;
   align-items: center;
   flex-direction: row;
-  color: #e37b7c;
-  background-color: #fff;
+  color: #1e9df7;
+  background-color: #f1f5f9;
   margin: 0 5px;
   padding: 2px 10px;
   font-size: 2rem;
   letter-spacing: 2px;
   cursor: pointer;
   font-weight: bold;
-  border: 1px solid #e37b7c;
+  border: 1px solid #1e9df7;
 }
 @media (max-width: 500x) {
   .tabs .tab {
@@ -255,8 +263,8 @@
   color: black;
 }
 .tabs .active-tab {
-  background-color: #e37b7c;
-  color: #fff;
+  background-color: #1e9df7;
+  color: #f1f5f9;
   border: 2px solid #C0C0C0;
 }
 @media (max-width: 500x) {
@@ -299,16 +307,16 @@
   justify-content: center;
   align-items: none;
   flex-direction: row;
-  border: 1px solid #e37b7c;
-  background-color: #fff;
-  color: #e37b7c;
+  border: 1px solid #1e9df7;
+  background-color: #f1f5f9;
+  color: #1e9df7;
   width: 380px;
   margin-bottom: 16px;
   padding: 15px;
   margin-top: 15px;
 }
 .cards-container .card .card-content {
-  color: #e37b7c;
+  color: #1e9df7;
 }
 .cards-container .card .card-content li {
   font-size: 1.6rem;
@@ -322,6 +330,91 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+}
+.learnObjectives {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.learnObjectives button {
+  font-weight: bold;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 80px;
+  background-color: #f1f5f9;
+  color: #1e9df7;
+  font-size: 2rem;
+  border: 2px solid #C0C0C0;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .learnObjectives button {
+    width: 100%;
+  }
+}
+.learnObjectives button:hover {
+  background: #f1f5f9;
+  color: black;
+}
+.learnObjectives p {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 20px;
+  padding: 15px;
+}
+footer {
+  width: 100%;
+  background-color: #f1f5f9;
+  color: #1e9df7;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+  }
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .footerArrow {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #f1f5f9;
+  padding: 10px;
+  background-color: #1e9df7;
+  margin: 10px;
+}
+.contact .footerArrow:hover {
+  color: black;
+}
+.contact .social-media-icons i {
+  font-size: 2rem;
+  padding: 5px;
+}
+.contact .social-media-icons i:hover {
+  opacity: 0.6;
+}
+.contact .copyright {
+  text-decoration: none;
+  color: #1e9df7;
+}
+@media (max-width: 500px) {
+  .contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 * {
@@ -340,9 +433,9 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-color: #e37b7c;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1e9df7;
+  color: #f1f5f9;
+  font-family: 'Montserrat', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -380,8 +473,8 @@ p {
   align-items: center;
   width: 400px;
   height: 50px;
-  background-color: #fff;
-  color: #e37b7c;
+  background-color: #f1f5f9;
+  color: #1e9df7;
   font-size: 2rem;
   border: 2px solid #C0C0C0;
   cursor: pointer;
@@ -392,7 +485,7 @@ p {
   }
 }
 .start-button button:hover {
-  background: #fff;
+  background: #f1f5f9;
   color: black;
 }
 @media (max-width: 500px) {
