@@ -1,14 +1,18 @@
 .carousel {
+    border: 1px solid black;
     width: 100%;
     .flex(center, center);
     height: 600px;
     position: relative;
     overflow: hidden;
     margin-top: 16px;
+    
     @media(min-width: 500px) {
         width: 100%;
     }
     .numbertext {
+        .flex(center, center);
+        width: 100%;
         display: none;
         padding: 15px;
         position: absolute;
@@ -17,10 +21,10 @@
         // text-align: center;        
     }
 
-    img {        
+    img { 
+        .flex(center, center);       
         width: 100%;        
-        display: none;
-        margin: 0 auto;
+        display: none;        
         
     }
     .right-button {

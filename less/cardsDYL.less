@@ -1,0 +1,39 @@
+.cards-container {
+    .flex(center);
+    width: 100%;
+    margin-top: 1px;
+    flex-wrap: nowrap;
+    @media(min-width: 1200px){
+        width: 1200px;
+      }
+    @media(max-width: 500px) {
+        width: 100%;
+        .flex(center, center, column);
+        flex-wrap: wrap;
+    }
+    .card {
+        .flex(center, none, row);
+        border: 1px solid @primary-background-color;
+        background-color: @primary-color;
+        color: @primary-background-color;
+        width: 380px;
+        // height: 300px;
+        margin-bottom: 16px;
+        
+        padding: 15px;
+        margin-top: 15px;
+        .card-content {
+            color: @primary-background-color; 
+            li {
+                font-size: 1.6rem;
+            }           
+        }
+        @media(max-width: 500px) {
+            margin-top: 25px;
+            width: 80%;
+            .flex(center, center, column);
+            flex-wrap: wrap;
+        }
+
+    }
+}

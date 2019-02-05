@@ -1,13 +1,17 @@
-.tabs {
-    width: 100%;
-    .flex(center, center);
-    height: 50px;
+.tabs {    
+    .flex(center, center);    
     background-color: @primary-color;
-    @media(max-width: 500x){
-        width: 100%;
-      }
+    // @media(min-width: 1280px){
+    //     width: 1280px;
+    //   }
+  
       .phases {
           .flex(none, center);
+          @media(max-width: 500x){
+            width: 100%;
+            .flex(center, center, column);
+            flex-wrap: wrap;                    
+          } 
       }
       .tab {
           .flex(none, center);
@@ -19,13 +23,29 @@
           letter-spacing: 2px;
           cursor: pointer;
           font-weight: bold;
+          border: 1px solid @primary-background-color;
+          @media(max-width: 500x){
+            font-size: 1.5rem;
+            width: 100%;
+            .flex(center, center, column);
+            flex-wrap: wrap; 
+                
+          }         
           &:hover {
-          text-decoration: underline;
+          color: black;
+        //   font-size: 2.2rem;
       }
+      
       }
       .active-tab {
           background-color: @primary-background-color;
           color: @primary-color;
           border: 2px solid @silver;
+      }
+        @media(max-width: 500x){
+            font-size: 1.5rem;
+        width: 100%;
+        .flex(center, center, column);
+        flex-wrap: wrap;                 
       }
 }

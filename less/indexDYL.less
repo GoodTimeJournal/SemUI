@@ -3,6 +3,8 @@
 @import './TopBarDYL';
 @import './TopInfoDYL';
 @import './carousel';
+@import './tabsDYL';
+@import './cardsDYL';
 
 * {
     box-sizing: border-box;
@@ -22,6 +24,7 @@ body {
     background-color: @primary-background-color;
     color: @primary-color;
     font-family: @big-letter-font;
+    
 }
 
 h1 {
@@ -38,7 +41,7 @@ h1 {
   }
   h5 {
     font-size: 2rem;
-    line-height: 2;
+    line-height: 1.5;
   }
   
   p {
@@ -53,6 +56,11 @@ h1 {
       button {
         font-weight: bold;
         .button-creator(400px, 50px, @primary-color, @primary-background-color, 2rem);
+      }
+      @media(max-width: 500px){
+        width: 100%;
+        .flex(center, center, column);
+        flex-wrap: wrap;
       }
    
   }
