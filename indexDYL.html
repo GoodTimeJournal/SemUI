@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/indexDYL.css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+    <script src="./Components/carouselDYL.js" async></script>
     <!-- <script src="./components/Tabs/Tabs.js" async></script>
 
 
@@ -46,16 +47,28 @@
 
     <!-- Carousel -->
     <div class="carousel">
-        <div class="left-button"> < </div>
-        <!-- <img src="./img/lost.jpg" alt="woman looking up in forest"> -->
-        <img src="" alt="">
-        <img src="" alt="">
-        <div class="right-button"> > </div>
-    </div>
+        <!-- <div class="left-button">&#10094;</div> -->        
+            <div class="numbertext">Phase I: Self Acceptance        
+                <img src="./img/lost.jpg" alt="woman looking up in forest" class="carousel-img">
+            </div>
+        
+            <div class="numbertext">Phase II: Design Your Life
+                <img src="./img/write_life.jpg" alt="empty book with pen" class="carousel-img">
+            </div>        
+
+        
+            <div class="numbertext">Phase III: Sample Your Life
+                <img src="./img/sampling_life.jpg" alt="listening to someone talk" class="carousel-img">
+            </div>
+        
+            <div class="right-button">&#10095;</div>       
+    </div>    
+    
 
     <!-- Start button -->
     <div class="start-button">
-        <button>Start designing a better life for you</button>
+        <button>Start designing a better life for you</button> 
+        <h2>How It Works</h2>
     </div>
 
     <!-- Tabs component -->
@@ -73,10 +86,59 @@
         <!-- CARD COMPONENTS -->
         <div class="card stepI" data-tab="phaseI">
             <div class="card-content">
-                <h4>Step 1:</h4>
+                <h3>Step 1:</h3>
                 <p>Ditch the notion that you have to be perfect!</p>
-            </div>
-            
+            </div>           
+        </div>
+
+        <div class="card stepII" data-tab="phaseI">
+            <div class="card-content">
+                <h3>Step 2:</h3>
+                <p>Ditch dysfunctional beliefs that you must have a passion!</p>
+            </div>           
+        </div>
+
+        <div class="card stepI" data-tab="phaseII">
+            <div class="card-content">
+                <h3>Step 1: Your optimized life</h3>
+                <p>Start a good time journal</p>
+                <p>Do it for 3 weeks everyday</p>
+                <p>Utilize AEIOU Technique: Activities you were doing. 
+                    Environment you’re in. Who were you interacting with?
+                    What objects were you using. 
+                    What users were you working for?</p>                   
+            </div>           
+        </div>
+
+        <div class="card stepII" data-tab="phaseII">
+                <div class="card-content">
+                    <h3>Step 2: Sketch a 5 year plan of your alternate life</h3>
+                    <p>Suppose your job went away due to AI taking over</p>
+                    <p>What else would you do?</p>                  
+                </div>           
+        </div>
+        <div class="card stepIII" data-tab="phaseII">
+                <div class="card-content">
+                    <h3>Step 3:Sketch a 5 year plan of your Fascinated life</h3>
+                    <p>What would you do if money, image, prestige wasn’t an issue for you?</p>                           
+                </div>           
+        </div>
+
+        <div class="card stepI" data-tab="phaseIII">
+                <div class="card-content">
+                    <h3>Step 1: Conduct prototype conversations</h3>
+                    <p>Reach out to people on linkedIn </p>  
+                    <p>Find people at conferences and ask to have coffee or 15 min skype meeting to conduct informational interviews. </p>
+                    <p>Listen to their stories and take notes.</p>                         
+                </div>           
+        </div>
+
+        <div class="card stepII" data-tab="phaseIII">
+                <div class="card-content">
+                    <h3>Step 2: Narrow down a few lives you'd like to live</h3>
+                    <p>Choose a life of one person you've interviewed</p>  
+                    <p>Live the life of that person for a while</p>                                           
+                </div>           
         </div>
 
     </div>

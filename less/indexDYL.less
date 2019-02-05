@@ -2,6 +2,7 @@
 @import './mixinsDYL';
 @import './TopBarDYL';
 @import './TopInfoDYL';
+@import './carousel';
 
 * {
     box-sizing: border-box;
@@ -47,10 +48,11 @@ h1 {
   }
 
   .start-button {
+    margin-top: 40px;
+    .flex(center, center, column);
       button {
+        font-weight: bold;
         .button-creator(400px, 50px, @primary-color, @primary-background-color, 2rem);
-        // 200px, 45px, @button-bg, @white, 1.8rem
-
       }
    
   }

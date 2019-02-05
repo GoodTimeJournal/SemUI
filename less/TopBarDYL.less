@@ -2,8 +2,12 @@
     width: 100%;
     .flex(center, none, row);
     .container {
-        .flex(space-between, center, row);
-        font-size: 2rem;
+        .flex(space-between, center, row);        
+        @media(max-width: 500px){
+            width: 100%;
+            .flex(center, center, column);
+            flex-wrap: wrap;
+          }
 
     }    
 }
@@ -28,20 +32,37 @@
     span {
         padding: 20px;
         .flex(space-between, center, row);
-        margin: 10px;         
+        font-size: 1.8rem;
+        margin: 10px;
+        cursor: pointer; 
+        &:hover {
+            font-size: 2.2rem;
+            color: black;
+
+        }        
     }
 
 }
 
 .container-right {
-    border: 1px solid black;
+    // border: 1px solid black;
     padding: 10px;
     margin: 20px;    
     .flex(space-between, center, row);
     span {
+        .button-creator(130px, 50px, @primary-color, @primary-background-color, 1.8rem);        
         padding: 20px;  
-        margin: 10px; 
-        text-align: center;    
+        margin: 10px;         
+        font-weight: bold;
+        text-align: center; 
+        border: 2px solid @silver;
+        border-radius: 15px;
+        cursor: pointer; 
+        &:hover {
+            // text-decoration: underline;
+            // color: black;
+            .button-creator(150px, 50px, @primary-color, @primary-background-color, 2.2rem);
+        }    
     }
 }
 
