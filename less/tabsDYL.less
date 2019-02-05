@@ -1,0 +1,31 @@
+.tabs {
+    width: 100%;
+    .flex(center, center);
+    height: 50px;
+    background-color: @primary-color;
+    @media(max-width: 500x){
+        width: 100%;
+      }
+      .phases {
+          .flex(none, center);
+      }
+      .tab {
+          .flex(none, center);
+          color: @primary-background-color;
+          background-color: @primary-color;
+          margin: 0 5px;
+          padding: 2px 10px;
+          font-size: 2rem;
+          letter-spacing: 2px;
+          cursor: pointer;
+          font-weight: bold;
+          &:hover {
+          text-decoration: underline;
+      }
+      }
+      .active-tab {
+          background-color: @primary-background-color;
+          color: @primary-color;
+          border: 2px solid @silver;
+      }
+}
