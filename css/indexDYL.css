@@ -25,6 +25,16 @@
     flex-wrap: wrap;
   }
 }
+@media (max-width: 800px) {
+  .top-bar .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .container-left {
   display: flex;
   justify-content: flex-start;
@@ -60,16 +70,36 @@
   font-size: 2.2rem;
   color: black;
 }
+@media (max-width: 500px) {
+  .container-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) {
+  .container-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 .container-right {
   padding: 10px;
-  margin: 20px;
+  margin: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
 .container-right span {
-  margin: 15px;
+  margin: 20px;
 }
 .container-right span a {
   text-decoration: none;
@@ -378,6 +408,7 @@ footer {
   width: 100%;
   background-color: #f1f5f9;
   color: #1e9df7;
+  margin: 5px;
 }
 @media (max-width: 500px) {
   footer {
@@ -402,8 +433,8 @@ footer {
   color: black;
 }
 .contact .social-media-icons i {
-  font-size: 2rem;
-  padding: 5px;
+  font-size: 3rem;
+  padding: 10px;
 }
 .contact .social-media-icons i:hover {
   opacity: 0.6;

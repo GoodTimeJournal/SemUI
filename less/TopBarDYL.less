@@ -1,4 +1,5 @@
 .top-bar {
+    // border: 1px solid black;
     width: 100%;
     // margin: 0 auto;
     .flex(center, none, row);
@@ -10,11 +11,17 @@
             .flex(center, center, column);
             flex-wrap: wrap;
           }
+          @media(max-width: 800px){
+            width: 100%;
+            .flex(center, center, column);
+            flex-wrap: wrap;
+          }
 
     }    
 }
 
 .container-left {
+    // border: 1px solid black;
     .flex(flex-start, none, row);    
     width: 400px;
     padding-left: 50px;
@@ -29,6 +36,7 @@
 }
 
 .container-center {
+    // border: 1px solid black;
     .flex(center, center, row);
     span {
         padding: 20px;
@@ -41,17 +49,27 @@
             color: black;
         }                
     }
-
+    @media(max-width: 500px){
+        width: 100%;
+        .flex(center, center, column);
+        flex-wrap: wrap;
+      }
+      @media(max-width: 800px){
+        width: 100%;
+        .flex(center, center, column);
+        flex-wrap: wrap;
+      }
 }
 
 .container-right {
     // border: 1px solid black;
+    // border: 1px solid black;
     
     padding: 10px;
-    margin: 20px;    
+    margin: 15px;    
     .flex(space-between, center, row);
     span {
-        margin: 15px;
+        margin: 20px;
         
         a {
             text-decoration: none;            
