@@ -165,6 +165,38 @@
     margin: 10px;
   }
 }
+.container-center {
+  position: relative;
+}
+.features-dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: -50px;
+  background-color: #f1f5f9;
+  min-width: 280px;
+  box-shadow: 0px 8px 16px 0px #C0C0C0;
+  z-index: 1;
+  border-radius: 100%;
+}
+@media (max-width: 500px) {
+  width: 100%;
+}
+.features-dropdown-content a {
+  color: #1e9df7;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 100%;
+}
+.features-dropdown-content a:hover {
+  background-color: #C0C0C0;
+}
+.show {
+  display: block;
+}
 .top-info {
   display: flex;
   justify-content: center;
@@ -451,6 +483,43 @@ footer {
     align-items: center;
     flex-direction: column;
   }
+}
+.jumbotron {
+  border-radius: 20%;
+  padding: 20px;
+  color: #1e9df7;
+}
+.jumbotron p {
+  font-size: 2rem;
+}
+.bg-dark {
+  width: 60%;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.bg-dark img {
+  height: 300px;
+  opacity: 0.6;
+}
+.card-deck {
+  margin: 10px;
+  padding-top: 20px;
+  border-top: 8px dotted #f1f5f9;
+}
+.card-deck img {
+  height: 400px;
+}
+.card-deck h5 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.card-deck li {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 * {
   box-sizing: border-box;
