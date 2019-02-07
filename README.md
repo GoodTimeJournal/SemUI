@@ -6,7 +6,7 @@ The purpose of this app is to help users create the best life for themselves whe
 
 ### In this part of the project 2 web pages were built with a few interactive components for users and fully responsive to tablet and mobile views.  
 #### 1. Landing Page for the web app and marketing website.
-⋅⋅⋅ This page used HTML/CSS for structure and styling. For interactivity, JavaScript with DOM manipulation, reusable class components and array methods were used.⋅⋅ 
+⋅⋅⋅ This page used HTML and LESS for structure and styling. For interactivity, JavaScript with DOM manipulation, reusable class components and array methods were used.⋅⋅ 
 #### 2. A 'Further Reading' webpage under the 'Features' tab from the navigation menu (Because self-help goes hand in hand with self-education). This section of the webpage equips users with actionable education in a very time efficient manner of 10-15 minutes per day
-⋅⋅⋅ This page used several features of Bootstrap 4 to create the different layouts and to add user interactivity.⋅⋅ 
+⋅⋅⋅ This page used several features of Bootstrap 4 along with HTML and LESS preprocessor to create the different layouts and to add user interactivity.⋅⋅ 
 
