@@ -88,17 +88,19 @@
 .list-unstyled {
     @media(max-width: 500px) {
         width: 100%;
+        .flex(space-between, center, column);
     }
     @media(max-width: 800px) {
         width: 100%;
-    }
-    // border: 1px solid black;
+        .flex(space-between, center, column);
+    }    
     width: 80%;
     .flex(space-between, center);
     flex-wrap: wrap;
     .media {
         .flex(space-between, center);
         padding: 20px;
+        width: 40%;
     }
     img {
         width: 100px;
