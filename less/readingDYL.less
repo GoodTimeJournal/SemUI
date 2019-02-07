@@ -1,5 +1,9 @@
+
 // Jumbotron styles
-.jumbotron {    
+.jumbotron {
+    // border: 1px solid black;
+    // width: 80%;
+    // .flex(center, center);    
     border-radius: 20%;
     padding: 20px;        
         color: @primary-background-color;
@@ -10,6 +14,7 @@
 
 // Image w/ text overlay styles;
 .bg-dark {
+    // border: 1px solid black;
     width: 60%;    
     margin-bottom: 20px; 
     border-radius: 50%;  
@@ -23,11 +28,15 @@
 // Card Deck layout styles
 
 .card-deck {
-    margin: 10px;
-    padding-top: 20px;
+    // border: 1px solid black;
+    margin: 30px 10px;
+    padding: 50px 10px;
     border-top: 8px dotted @primary-color;
+    border-bottom: 8px dotted @primary-color;
     img {
         height: 400px;
+        border-top-right-radius: 20%;
+        border-top-left-radius: 20%;
     }
     h5 {
         font-size: 2.8rem;
@@ -37,4 +46,35 @@
         font-size: 1.6rem;
         font-weight: bold;
     }
+    .card {
+        border-top-right-radius: 20%;
+        border-top-left-radius: 20%;
+    }
 }
+
+// Media list
+.list-unstyled {
+    // border: 1px solid black;
+    width: 80%;
+    .flex(space-between, center);
+    flex-wrap: wrap;
+    .media {
+        .flex(space-between, center);
+        padding: 20px;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+    h5 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .media-body {
+        font-size: 2rem;
+    }
+}
+
+// Accordion
+

@@ -16,23 +16,8 @@ class Carousel {
 
     }
     // methods
-    cycleLeft() {
-        // this.imageText[this.index].style.display = 'none';
-        // this.images[this.index].style.display = 'none';
-        // this.index === 0 ? this.index = this.imageText.length-1 : this.index--;
-        // this.index === 0 ? this.index = this.images.length-1 : this.index--;
-        // this.imageText[this.index].style.display = 'block';
-        // this.images[this.index].style.display = 'block';
-        // console.log(this.index);
-
-    }
-    cycleRight() {
-        // this.imageText[this.index].style.display = 'none';
-        // this.images[this.index].style.display = 'none';
-        // this.index === this.imageText.length-1 ? this.index = 0 : this.index++;
-        // this.index === this.images.length-1 ? this.index = 0 : this.index++;
-        // this.imageText[this.index].style.display = 'block';
-        // this.images[this.index].style.display = 'block';
+   
+    cycleRight() {        
         this.imageText[this.index].style.display = 'none';
         this.images[this.index].style.display = 'none';
         this.index === 0 ? this.index = this.imageText.length-1 : this.index--;
