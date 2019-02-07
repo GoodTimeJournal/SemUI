@@ -3,7 +3,11 @@ footer {
     background-color: @primary-color;
     color: @primary-background-color;
     margin: 5px;
+    padding: 10px;
     @media(max-width: 500px) {
+        width: 100%;
+    }
+    @media(max-width: 800px) {
         width: 100%;
     }
 }
@@ -35,6 +39,10 @@ footer {
         color: @primary-background-color
     }
     @media(max-width: 500px) {
+        width: 100%;
+        .flex(center, center, column);
+    }
+    @media(max-width: 800px) {
         width: 100%;
         .flex(center, center, column);
     }   
