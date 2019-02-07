@@ -43,7 +43,12 @@
           border: 2px solid @silver;
       }
         @media(max-width: 500x){
-            font-size: 1.5rem;
+        font-size: 1.5rem;
+        width: 100%;
+        .flex(center, center, column);
+        flex-wrap: wrap;                 
+      }
+      @media(max-width: 800x){        
         width: 100%;
         .flex(center, center, column);
         flex-wrap: wrap;                 

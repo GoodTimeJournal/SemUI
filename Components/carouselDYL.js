@@ -16,12 +16,12 @@ class Carousel {
 
     }
     // methods
-   
-    cycleRight() {        
+
+    cycleRight() {
         this.imageText[this.index].style.display = 'none';
         this.images[this.index].style.display = 'none';
-        this.index === 0 ? this.index = this.imageText.length-1 : this.index--;
-        this.index === 0 ? this.index = this.images.length-1 : this.index--;
+        this.index === 0 ? this.index = this.imageText.length - 1 : this.index--;
+        this.index === 0 ? this.index = this.images.length - 1 : this.index--;
         this.imageText[this.index].style.display = 'block';
         this.images[this.index].style.display = 'block';
 
