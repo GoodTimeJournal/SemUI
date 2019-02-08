@@ -67,8 +67,7 @@ h1 {
           &:hover {
             color: black;
           }        
-        }
-        
+        }        
       }
       @media(max-width: 500px){
         width: 100%;
@@ -80,4 +79,35 @@ h1 {
         .flex(center, center, column);
         flex-wrap: wrap;
       }   
+  }
+
+  // App preview
+  .preview {    
+    .flex(center, center, column);
+    h1 {
+      background-color: @primary-color;
+      color: @primary-background-color;
+      padding: 15px;
+      border-radius: 20px;
+    }
+    img {      
+      width: 700px;
+      height: 400px;
+      padding: 20px;
+      @media(max-width: 500px){
+        width: 100%;
+        .flex(center, center, column);        
+    }
+
+    @media(max-width: 500px){
+      width: 100%;
+      .flex(center, center, column);
+      flex-wrap: wrap;
+    }
+    @media(max-width: 800px){
+      width: 100%;
+      .flex(center, center, column);
+      flex-wrap: wrap;
+      }
+    }
   }
