@@ -8,7 +8,7 @@ class TabLink {
         // console.log(this.cards);
         // this.tabItem = new TabItem(this.cards);
         this.cards = Array.from(this.cards).map(allCards => new TabItem(allCards));
-        this.tabElement.addEventListener('click', () => this.selectTab()); 
+        this.tabElement.addEventListener('click', () => this.selectTab());
 
     }
     // methods
@@ -17,9 +17,8 @@ class TabLink {
         tabs.forEach(eachTab => eachTab.classList.remove('active-tab'));
         const cards = document.querySelectorAll('.card');
         cards.forEach(eachCard => eachCard.style.display = 'none');
-        this.tabElement.classList.add('active-tab');        
+        this.tabElement.classList.add('active-tab');
         this.cards.forEach(card => card.selectCards());
-
     }
 }
 
@@ -29,9 +28,11 @@ class TabItem {
         // console.log(this.cardElement);
     }
     // methods
-    selectCards() {        
+    selectCards() {
         this.cardElement.style.display = 'flex';
     }
 }
 
 let tabs = document.querySelectorAll('.tab').forEach(eachTab => new TabLink(eachTab));
+
+

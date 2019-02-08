@@ -1,0 +1,22 @@
+.learnObjectives {
+    margin-top: 40px;
+    .flex(center, center, column);
+    button {
+        font-weight: bold;
+        .button-creator(500px, 80px, @primary-color, @primary-background-color, 2rem);
+    }
+    p {
+        text-align: center;        
+        font-size: 2.8rem;
+        margin: 20px;
+        padding: 15px;
+    }
+    @media(max-width: 500px) {
+        width: 100%;
+        .flex(center, center, column);
+    }
+    @media(max-width: 800px) {
+        width: 100%;
+        .flex(center, center, column);
+    }
+}

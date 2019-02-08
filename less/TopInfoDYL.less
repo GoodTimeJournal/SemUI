@@ -1,13 +1,23 @@
 .top-info {
     .flex(center, center, column);
-    h1 {
-        border: 1px solid black;
+    h1 {        
         // .flex(center, center, column);
         text-align: center;
     }
-    h5 {
-        border: 1px solid black;
+    h5 {        
         .flex(center, center, column);
         text-align: center;
+    }
+
+    @media(max-width: 500px){
+        width: 100%;
+        .flex(space-between, center, column);
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    @media(max-width: 800px){
+        width: 100%;
+        .flex(space-between, center, column);
+        flex-wrap: wrap;                
     }
 }

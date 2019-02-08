@@ -1,25 +1,25 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'> 
-  
-  <title>Design Your Life</title>
 
-  <link rel="stylesheet" href="css/indexDYL.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+
+    <title>Design Your Life</title>
+
+    <link rel="stylesheet" href="css/indexDYL.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="./Components/randomLearnObj.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./Components/carouselDYL.js" async></script>
     <script src="./Components/tabsDYL.js" async></script>
-    
-    
-    <!-- <script src="./components/Tabs/Tabs.js" async></script>
+    <script src="./Components/generalDYL.js" async></script>
 
-
-  <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
@@ -30,47 +30,57 @@
 
     <header class="top-bar">
         <div class="container">
-        <div class="container-left">
-           <img src="./img/LogoII_DYL.png" alt="Design your life logo">
+            <div class="container-left">
+                <img src="./img/LogoII_DYL.png" alt="Design your life logo">
+            </div>
+            <div class="container-center">
+                <span>About</span>
+                <span class="features-dropbtn">Features
+                    <div id="features-dropdown" class="features-dropdown-content">
+                        <a href="readingDYL.html" target="_blank">Further Reading</a>
+                        <a href="#">Advice</a>
+                        <a href="#">Dig Deeper</a>
+                    </div> </span>
+                <span>Blog</span>
+                <span>Contact</span>
+            </div>
+            <div class="container-right"> <span> <a href="https://goodtimejournal-ak.netlify.com/" target="_blank">SIGN
+                        UP</a></span>
+                <span><a href="https://goodtimejournal-ak.netlify.com/" target="_blank">LOG IN</a></span>
+            </div>
         </div>
-        <div class="container-center">
-            <span>About</span> <span>Features</span> <span>Blog</span> <span>Contact</span>            
-        </div>
-        <div class="container-right"> <span>SIGN UP</span> <span>LOG IN</span>  
-        </div>
-    </div>
     </header>
 
     <!-- Top info COMPONENT -->
     <div class="top-info">
         <h1>Let’s help you design your best life</h1>
         <h5>Your private, secure & optimally designed life <br> We guide you through it all</h5>
-        
+
     </div>
 
     <!-- Carousel -->
-    <div class="carousel">
-        <!-- <div class="left-button">&#10094;</div> -->        
-            <div class="numbertext">Phase I: Self Acceptance        
-                <img src="./img/lost.jpg" alt="woman looking up in forest" class="carousel-img">
-            </div>
-        
-            <div class="numbertext">Phase II: Design Your Life
-                <img src="./img/write_life.jpg" alt="empty book with pen" class="carousel-img">
-            </div>        
+    <div class="carousel">        
+        <div class="numbertext">Phase I: Self Acceptance
+            <img src="./img/lost.jpg" alt="woman looking up in forest" class="carousel-img">
+        </div>
 
-        
-            <div class="numbertext">Phase III: Sample Your Life
-                <img src="./img/sampling_life.jpg" alt="listening to someone talk" class="carousel-img">
-            </div>
-        
-            <div class="right-button">&#10095;</div>       
-    </div>    
-    
+        <div class="numbertext">Phase II: Design Your Life
+            <img src="./img/write_life.jpg" alt="empty book with pen" class="carousel-img">
+        </div>
+
+
+        <div class="numbertext">Phase III: Sample Your Life
+            <img src="./img/sampling_life.jpg" alt="listening to someone talk" class="carousel-img">
+        </div>
+
+        <div class="right-button">&#10095;</div>
+    </div>
+
 
     <!-- Start button -->
     <div class="start-button">
-        <button>Start designing a better life for you</button> 
+        <button> <a href="https://goodtimejournal-ak.netlify.com/" target="_blank">Start designing a better life for
+                you</a></button>
         <h2>How It Works</h2>
     </div>
 
@@ -91,14 +101,14 @@
             <div class="card-content">
                 <h5>Step 1:</h5>
                 <p>Ditch the notion that you have to be perfect!</p>
-            </div>           
+            </div>
         </div>
 
         <div class="card stepII" data-tab="phaseI">
             <div class="card-content">
                 <h5>Step 2:</h5>
                 <p>Ditch dysfunctional beliefs that you must have a passion!</p>
-            </div>           
+            </div>
         </div>
 
         <div class="card stepI" data-tab="phaseII">
@@ -106,54 +116,77 @@
                 <h5>Step 1: Your optimized life</h5>
                 <p>Start a good time journal</p>
                 <p>Do it for 3 weeks everyday</p>
-                <p>Utilize AEIOU Technique: <ul>
-                    <li> <b>ACTIVITIES</b> you were doing?</li> 
-                    <li><b>ENVIRONMENT</b> you were in?</li>
-                    <li>Who were you <b>INTERACTING</b> with?</li>
-                    <li>What <b>OBJECTS</b> were you using?</li>
-                    <li>What <b>USERS</b> were you working for?</li>                    
-                </ul>                    
-                    </p>                   
-            </div>           
+                <p>Utilize AEIOU Technique:
+                    <ul>
+                        <li> <b>ACTIVITIES</b> you were doing?</li>
+                        <li><b>ENVIRONMENT</b> you were in?</li>
+                        <li>Who were you <b>INTERACTING</b> with?</li>
+                        <li>What <b>OBJECTS</b> were you using?</li>
+                        <li>What <b>USERS</b> were you working for?</li>
+                    </ul>
+                </p>
+            </div>
         </div>
 
         <div class="card stepII" data-tab="phaseII">
-                <div class="card-content">
-                    <h5>Step 2: Sketch a 5 year plan of your alternate life</h5>
-                    <p>Suppose your job went away due to AI taking over</p>
-                    <p>What else would you do?</p>                  
-                </div>           
+            <div class="card-content">
+                <h5>Step 2: Sketch a 5 year plan of your alternate life</h5>
+                <p>Suppose your job went away due to AI taking over</p>
+                <p>What else would you do?</p>
+            </div>
         </div>
         <div class="card stepIII" data-tab="phaseII">
-                <div class="card-content">
-                    <h5>Step 3:Sketch a 5 year plan of your Fascinated life</h5>
-                    <p>What would you do if money, image, prestige wasn’t an issue for you?</p>                           
-                </div>           
+            <div class="card-content">
+                <h5>Step 3:Sketch a 5 year plan of your Fascinated life</h5>
+                <p>What would you do if money, image, prestige wasn’t an issue for you?</p>
+            </div>
         </div>
 
         <div class="card stepI" data-tab="phaseIII">
-                <div class="card-content">
-                    <h5>Step 1: Conduct prototype conversations</h5>
-                    <p>Reach out to people on linkedIn </p>  
-                    <p>Find people at conferences and ask to have coffee or 15 min skype meeting to conduct informational interviews. </p>
-                    <p>Listen to their stories and take notes.</p>                         
-                </div>           
+            <div class="card-content">
+                <h5>Step 1: Conduct prototype conversations</h5>
+                <p>Reach out to people on linkedIn </p>
+                <p>Find people at conferences and ask to have coffee or 15 min skype meeting to conduct informational
+                    interviews. </p>
+                <p>Listen to their stories and take notes.</p>
+            </div>
         </div>
 
         <div class="card stepII" data-tab="phaseIII">
-                <div class="card-content">
-                    <h5>Step 2: Narrow down a few lives you'd like to live</h5>
-                    <p>Choose a life of one person you've interviewed</p>  
-                    <p>Live the life of that person for a while</p>                                           
-                </div>           
+            <div class="card-content">
+                <h5>Step 2: Narrow down a few lives you'd like to live</h5>
+                <p>Choose a life of one person you've interviewed</p>
+                <p>Live the life of that person for a while</p>
+            </div>
         </div>
 
     </div>
 
+    <!-- Random Learn Objectives generator -->
+    <div class="learnObjectives">
+        <button>See everything you'll learn with this app! <br> Keep Clicking! </button>
+        <p id='learnObjDisplay'></p>
+    </div>
 
+    <!-- App preview -->
+    <div class="preview">
+        <h1>App Preview</h1>
+        <img src="./img/preview/app-preview.gif" alt="">
+    </div>
 
+    <!-- Footer -->
+    <footer class='contact'>
+        <h5>Contact Us!</h5>
+        <a href="#" class="footerArrow"><i class="fa fa-arrow-up"></i>To The Top</a>
+        <div class="social-media-icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa fa-pinterest-p"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p><a href="#" target="_blank" class="copyright">Copyright Good Time Journal Team&#169</a></p>
 
-
-
-
+    </footer>
 </body>

@@ -1,4 +1,5 @@
 .top-bar {
+    // border: 1px solid black;
     width: 100%;
     // margin: 0 auto;
     .flex(center, none, row);
@@ -10,13 +11,18 @@
             .flex(center, center, column);
             flex-wrap: wrap;
           }
+          @media(max-width: 800px){
+            width: 100%;
+            .flex(center, center, column);
+            flex-wrap: wrap;
+          }
 
     }    
 }
 
 .container-left {
-    .flex(flex-start, none, row);
-    border: 1px solid black;
+    // border: 1px solid black;
+    .flex(flex-start, none, row);    
     width: 400px;
     padding-left: 50px;
     margin: 5%;
@@ -30,43 +36,104 @@
 }
 
 .container-center {
+    // border: 1px solid black;
     .flex(center, center, row);
     span {
         padding: 20px;
         .flex(space-between, center, row);
-        font-size: 1.8rem;
+        font-size: 2rem;
         margin: 10px;
         cursor: pointer; 
         &:hover {
             font-size: 2.2rem;
             color: black;
-
-        }        
+        }                
     }
-
+    @media(max-width: 500px){
+        width: 100%;
+        .flex(center, center, column);
+        flex-wrap: wrap;
+      }
+      @media(max-width: 800px){
+        width: 100%;
+        .flex(center, center, column);
+        flex-wrap: wrap;
+      }
 }
 
 .container-right {
-    // border: 1px solid black;
+    // border: 1px solid black;    
     padding: 10px;
-    margin: 20px;    
+    margin: 15px;    
     .flex(space-between, center, row);
     span {
-        .button-creator(130px, 50px, @primary-color, @primary-background-color, 1.8rem);        
-        padding: 20px;  
-        margin: 10px;         
-        font-weight: bold;
-        text-align: center; 
-        border: 2px solid @silver;
-        border-radius: 15px;
-        cursor: pointer; 
-        &:hover {
-            // text-decoration: underline;
-            // color: black;
-            .button-creator(150px, 50px, @primary-color, @primary-background-color, 2.2rem);
-        }    
+        margin: 20px;
+        
+        a {
+            text-decoration: none;            
+            .button-creator(130px, 50px, @primary-color, @primary-background-color, 2rem);        
+            padding: 20px;  
+            margin: 10px;         
+            font-weight: bold;
+            text-align: center; 
+            border: 2px solid @silver;
+            border-radius: 15px;
+            cursor: pointer; 
+            &:hover {                
+                .button-creator(150px, 50px, @primary-color, @primary-background-color, 2.2rem);            
+            }
+            @media(max-width: 500px){
+                width: 100%;
+                .flex(space-between, center, column);
+                flex-wrap: wrap;
+                margin: 10px;
+            }
+            @media(max-width: 800px){
+                width: 100%;
+                .flex(space-between, center, column);
+                flex-wrap: wrap;                
+            }
+        }           
     }
 }
+
+// Hover styling for 'Features' navigation menu
+
+.container-center {
+    position: relative;
+}
+
+.features-dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: -50px;
+    background-color: @primary-color;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px @silver;
+    z-index: 1;
+    border-radius: 100%;    
+}
+@media(max-width: 500px){
+    width: 100%;    
+}
+.features-dropdown-content a {
+    color: @primary-background-color;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 100%;
+
+    &:hover {
+        background-color: @silver;
+    }
+}
+.show {
+    display: block;    
+}
+
 
 
 

@@ -5,6 +5,9 @@
 @import './carousel';
 @import './tabsDYL';
 @import './cardsDYL';
+@import './randomLearnObj';
+@import './footerDYL';
+@import './readingDYL';
 
 * {
     box-sizing: border-box;
@@ -51,16 +54,60 @@ h1 {
   }
 
   .start-button {
+    // border: 1px solid black;
     margin-top: 40px;
     .flex(center, center, column);
-      button {
-        font-weight: bold;
-        .button-creator(400px, 50px, @primary-color, @primary-background-color, 2rem);
+      button {  
+        .button-creator(400px, 50px, @primary-color, @primary-background-color, 2rem);       
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: @primary-background-color;
+          background-color: @primary-color;
+          &:hover {
+            color: black;
+          }        
+        }        
       }
       @media(max-width: 500px){
         width: 100%;
         .flex(center, center, column);
         flex-wrap: wrap;
       }
-   
+      @media(max-width: 800px){
+        width: 100%;
+        .flex(center, center, column);
+        flex-wrap: wrap;
+      }   
+  }
+
+  // App preview styles
+  .preview {    
+    .flex(center, center, column);
+    h1 {
+      background-color: @primary-color;
+      color: @primary-background-color;
+      padding: 15px;
+      border-radius: 20px;
+    }
+    img {      
+      width: 700px;
+      height: 400px;
+      padding: 20px;
+      @media(max-width: 500px){
+        width: 100%;
+        .flex(center, center, column);        
+    }
+
+    @media(max-width: 500px){
+      width: 100%;
+      .flex(center, center, column);
+      flex-wrap: wrap;
+    }
+    @media(max-width: 800px){
+      width: 100%;
+      .flex(center, center, column);
+      flex-wrap: wrap;
+      }
+    }
   }
